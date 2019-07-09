@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+html,body {
   display: flex;
   background-image: linear-gradient(to  top,
       hsla(110, 93%, 47%, 0.7), rgba(8, 8, 6,0.5)),

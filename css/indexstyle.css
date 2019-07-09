@@ -14,9 +14,6 @@ body {
       rgba(23, 67, 80, 0.95));
 }
 
-nav {
-  height: 15vh;
-}
 
 .dog {
   z-index: -1;
@@ -47,9 +44,6 @@ nav {
     margin: 3px;
   }
 
-  nav {
-    position: relative;
-  }
 
   .hamburger {
     animation: showingOn 1s ease-out;
@@ -76,13 +70,13 @@ nav {
   }
 
   .dog.open {
-    clip-path: circle(1400px at 90% -10%);
-    -webkit-clip-path: circle(1400px at 90% -10%);
+    clip-path: circle(150vh at 90% 0%);
+    -webkit-clip-path: circle(150vh at 90% 0%);
   }
 }
-
 .header {
   height: 95vh;
+
   background-image: linear-gradient(to left bottom,
       rgba(0, 191, 255, 0.9), rgba(40, 178, 220, 0.7)),
     url(../img/moutnains.jpeg);
@@ -105,6 +99,7 @@ nav {
   text-align: center;
 }
 .row {
+  padding: auto;
   justify-content: space-around;
   height: 340px;
   width: 100%;
@@ -117,6 +112,7 @@ nav {
 }
 
 .column {
+  padding: auto;
   height: 100%;
   width: 100%;
   margin-left: 35px;
@@ -168,6 +164,30 @@ nav {
   align-items: center;
   text-transform: translateY(50px);
 }
+.fourth {
+  height: 100%;
+  padding-top: 45%;
+  background-image: linear-gradient(to bottom ,
+      rgba(243, 228, 71, 0.3), hsla(34, 100%, 50%, 0.5)),
+    url(../img/compiler.jpg);
+  border-radius: 25px;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  text-transform: translateY(50px);
+}
+.fifth {
+  height: 100%;
+  padding-top: 45%;
+  background-image: linear-gradient(to bottom ,
+      rgba(243, 228, 71, 0.3), hsla(34, 100%, 50%, 0.5)),
+    url(../img/chineese-checkers.png);
+  border-radius: 25px;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  text-transform: translateY(50px);
+}
 
 .column:hover {
   transition: all .3s;
@@ -179,7 +199,7 @@ nav {
 .logo-box {
   opacity: 0.1;
   position: absolute;
-  top: 20px;
+  top: 15px;
   left: 20px;
 }
 
@@ -192,6 +212,7 @@ nav {
 }
 
 .text-box {
+width:100%;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -201,12 +222,15 @@ nav {
 
 .heading-primary {
   color: white;
+  width: 100%;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 50px;
 }
 
 .heading-primary-main {
+  width: 100%;
+  position: relative;
   display: block;
   font-size: 80px;
   font-weight: 400;
@@ -218,6 +242,7 @@ nav {
 
 .heading-primary-sub {
   display: block;
+  width: 100%;
   font-size: 30px;
   font-weight: 200;
   letter-spacing: 24px;
