@@ -90,17 +90,17 @@ nav {
   background-size: cover;
   background-position: top;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
 .sectionforcards {
-  height: 95vh;
+  height: 95%;
   background-image: linear-gradient(to right top,
       rgba(0, 191, 255, 0.9), rgba(40, 178, 220, 0.7)),
     url(../img/moutnains.jpeg);
   background-size: cover;
   position: relative;
-  clip-path: polygon(0 10vh, 100% 15vh, 100% 85vh, 0 100%);
+  clip-path: polygon(0 10%, 100% 15%, 100% 85%, 0 100%);
   justify-content: space-around;
   align-items: center;
   text-align: center;
