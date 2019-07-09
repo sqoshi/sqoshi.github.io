@@ -15,7 +15,7 @@ body {
 }
 
 .dog {
-  
+
   z-index: -1;
   display: flex;
   list-style: none;
@@ -166,7 +166,7 @@ body {
 }
 
 .logo-box {
-  opacity: 0.1;
+  opacity: 0.2;
   position: absolute;
   top: 15px;
   left: 20px;
@@ -174,11 +174,10 @@ body {
 
 .logo {
   height: 50px;
+  border-radius: 25px;
 }
 
-.logo:hover {
-  animation: rotate1 2s ease-out;
-}
+
 
 .text-box {
   width: 100%;
