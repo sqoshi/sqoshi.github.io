@@ -14,7 +14,6 @@ body {
       rgba(23, 67, 80, 0.95));
 }
 
-
 .dog {
   z-index: -1;
   display: flex;
@@ -36,11 +35,8 @@ body {
   font-size: 16px;
 }
 
-
 .header {
-  width:100%;
   height: 95vh;
-
   background-image: linear-gradient(to left bottom,
       rgba(0, 191, 255, 0.9), rgba(40, 178, 220, 0.7)),
     url(../img/moutnains.jpeg);
@@ -56,31 +52,34 @@ body {
       rgba(0, 191, 255, 0.9), rgba(40, 178, 220, 0.7)),
     url(../img/moutnains.jpeg);
   background-size: cover;
+  background-position: bottom;
   position: relative;
   clip-path: polygon(0 10%, 100% 15%, 100% 85%, 0 100%);
   justify-content: space-around;
   align-items: center;
   text-align: center;
 }
+
 .row {
   padding: auto;
   justify-content: space-around;
   height: 340px;
-  width: 100%;
   flex-direction: row;
   background-color: transparent;
   display: flex;
   list-style: none;
   position: absolute;
   top: 30%;
+  width: 100%;
+  column-span:all;
 }
 
 .column {
   padding: auto;
   height: 100%;
   width: 100%;
-  margin-left: 35px;
-  margin-right: 35px;
+  margin-left: 2%;
+  margin-right: 2%;
   align-items: center;
   text-decoration: none;
   cursor: pointer;
@@ -92,21 +91,22 @@ body {
 }
 
 .first {
+  display: list-item;
   height: 100%;
   padding-top: 45%;
-  background-image: linear-gradient(to bottom ,
+  background-image: linear-gradient(to bottom,
       rgba(243, 228, 71, 0.3), hsla(34, 100%, 50%, 0.5)),
     url(../img/shellim.jpeg);
   border-radius: 25px;
   background-size: cover;
   background-position: center;
   align-items: center;
-  text-transform: translateY(50px);
 }
+
 .second {
   height: 100%;
   padding-top: 45%;
-  background-image: linear-gradient(to bottom ,
+  background-image: linear-gradient(to bottom,
       rgba(243, 228, 71, 0.3), hsla(34, 100%, 50%, 0.5)),
     url(../img/network.jpeg);
   border-radius: 25px;
@@ -116,10 +116,11 @@ body {
   text-transform: translateY(50px);
   background-position: top;
 }
+
 .third {
   height: 100%;
   padding-top: 45%;
-  background-image: linear-gradient(to bottom ,
+  background-image: linear-gradient(to bottom,
       rgba(243, 228, 71, 0.3), hsla(34, 100%, 50%, 0.5)),
     url(../img/aisd.png);
   border-radius: 25px;
@@ -128,10 +129,11 @@ body {
   align-items: center;
   text-transform: translateY(50px);
 }
+
 .fourth {
   height: 100%;
   padding-top: 45%;
-  background-image: linear-gradient(to bottom ,
+  background-image: linear-gradient(to bottom,
       rgba(243, 228, 71, 0.3), hsla(34, 100%, 50%, 0.5)),
     url(../img/compiler.jpg);
   border-radius: 25px;
@@ -140,10 +142,11 @@ body {
   align-items: center;
   text-transform: translateY(50px);
 }
+
 .fifth {
   height: 100%;
   padding-top: 45%;
-  background-image: linear-gradient(to bottom ,
+  background-image: linear-gradient(to bottom,
       rgba(243, 228, 71, 0.3), hsla(34, 100%, 50%, 0.5)),
     url(../img/chineese-checkers.png);
   border-radius: 25px;
@@ -158,7 +161,6 @@ body {
   transform: translateY(-10px);
   box-shadow: 25px 25px 30px rgba(0, 0, 0, .4);
 }
-
 
 .logo-box {
   opacity: 0.1;
@@ -176,7 +178,7 @@ body {
 }
 
 .text-box {
-width:100%;
+  width: 100%;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -214,8 +216,6 @@ width:100%;
   animation-duration: 2s;
   animation-timing-function: ease-out;
 }
-
-
 
 .btn:link,
 .btn:visited {
@@ -325,6 +325,7 @@ width:100%;
     opacity: 1;
   }
 }
+
 @media screen {
   .line {
     width: 30px;
@@ -332,7 +333,6 @@ width:100%;
     background: white;
     margin: 3px;
   }
-
 
   .hamburger {
     animation: showingOn 1s ease-out;
@@ -345,6 +345,7 @@ width:100%;
   }
 
   .dog {
+    zoom:1;
     position: fixed;
     background: linear-gradient(rgba(12, 28, 33, 0.9),
         rgba(40, 178, 220, 0.95));
@@ -353,12 +354,15 @@ width:100%;
     flex-direction: column;
     clip-path: circle(0px at 93% 8%);
     -webkit-clip-path: circle(0px at 93% 8%);
+    -webkit-animation-delay:1s;
     transition: all 1s ease-out;
     text-transform: uppercase;
     z-index: 1;
   }
 
   .dog.open {
+    -webkit-animation-delay:1s;
+  zoom:1;
     clip-path: circle(150vh at 90% 0%);
     -webkit-clip-path: circle(150vh at 90% 0%);
   }
