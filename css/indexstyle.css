@@ -36,44 +36,7 @@ body {
   font-size: 16px;
 }
 
-@media screen {
-  .line {
-    width: 30px;
-    height: 4px;
-    background: white;
-    margin: 3px;
-  }
 
-
-  .hamburger {
-    animation: showingOn 1s ease-out;
-    position: fixed;
-    cursor: pointer;
-    right: 5%;
-    top: 8%;
-    transform: translate(-5%, -50%);
-    z-index: 2;
-  }
-
-  .dog {
-    position: fixed;
-    background: linear-gradient(rgba(12, 28, 33, 0.9),
-        rgba(40, 178, 220, 0.95));
-    height: 100%;
-    width: 100%;
-    flex-direction: column;
-    clip-path: circle(0px at 93% 8%);
-    -webkit-clip-path: circle(0px at 93% 8%);
-    transition: all 1s ease-out;
-    text-transform: uppercase;
-    z-index: 1;
-  }
-
-  .dog.open {
-    clip-path: circle(150vh at 90% 0%);
-    -webkit-clip-path: circle(150vh at 90% 0%);
-  }
-}
 .header {
   width:100%;
   height: 95vh;
@@ -88,7 +51,7 @@ body {
 }
 
 .sectionforcards {
-  height: 95%;
+  height: 95vh;
   background-image: linear-gradient(to right top,
       rgba(0, 191, 255, 0.9), rgba(40, 178, 220, 0.7)),
     url(../img/moutnains.jpeg);
@@ -252,59 +215,7 @@ width:100%;
   animation-timing-function: ease-out;
 }
 
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
 
-  80% {
-    transform: translateX(10px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(+100px);
-  }
-
-  80% {
-    transform: translateX(-10px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
-@keyframes rotate1 {
-  0% {
-    transform: rotate(270deg);
-  }
-
-  100% {
-    0% {
-      transform: rotate(180deg);
-    }
-  }
-}
-
-@keyframes showingOn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
 
 .btn:link,
 .btn:visited {
@@ -359,4 +270,96 @@ width:100%;
 
 .btn-animated {
   animation: showingOn .5s ease-out .75s animation-fill-mode:backwards;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(+100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes rotate1 {
+  0% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    0% {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+@keyframes showingOn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@media screen {
+  .line {
+    width: 30px;
+    height: 4px;
+    background: white;
+    margin: 3px;
+  }
+
+
+  .hamburger {
+    animation: showingOn 1s ease-out;
+    position: fixed;
+    cursor: pointer;
+    right: 5%;
+    top: 8%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .dog {
+    position: fixed;
+    background: linear-gradient(rgba(12, 28, 33, 0.9),
+        rgba(40, 178, 220, 0.95));
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(0px at 93% 8%);
+    -webkit-clip-path: circle(0px at 93% 8%);
+    transition: all 1s ease-out;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+
+  .dog.open {
+    clip-path: circle(150vh at 90% 0%);
+    -webkit-clip-path: circle(150vh at 90% 0%);
+  }
 }
