@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  background: linear-gradient(rgba(12, 28, 33, 0.9),
+      rgba(23, 67, 80, 0.95));
+}
+
+nav {
+  height: 15vh;
+}
+
+.dog {
+  z-index: -1;
+  display: flex;
+  list-style: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  justify-content: space-around;
+  /*rozklada na oddzielne slowa rodziela i horyzont*/
+  align-items: center;
+  flex-direction: column;
+  /*centruje w danym panelu*/
+}
+
+.dog li a {
+  color: white;
+  text-decoration: none; // pozbycie sie podkreslenia linku
+  font-size: 16px;
+}
+
+@media screen {
+  .line {
+    width: 30px;
+    height: 4px;
+    background: white;
+    margin: 3px;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .hamburger {
+    animation: showingOn 1s ease-out;
+    position: fixed;
+    cursor: pointer;
+    right: 5%;
+    top: 8%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .dog {
+    position: fixed;
+    background: linear-gradient(rgba(12, 28, 33, 0.9),
+        rgba(40, 178, 220, 0.95));
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(0px at 93% 8%);
+    -webkit-clip-path: circle(0px at 93% 8%);
+    transition: all 1s ease-out;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+
+  .dog.open {
+    clip-path: circle(1400px at 90% -10%);
+    -webkit-clip-path: circle(1400px at 90% -10%);
+  }
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to left bottom,
+      rgba(0, 191, 255, 0.9), rgba(40, 178, 220, 0.7)),
+    url(../img/moutnains.jpeg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+}
+
+.sectionforcards {
+  height: 95vh;
+  background-image: linear-gradient(to right top,
+      rgba(0, 191, 255, 0.9), rgba(40, 178, 220, 0.7)),
+    url(../img/moutnains.jpeg);
+  background-size: cover;
+  position: relative;
+  clip-path: polygon(0 10vh, 100% 15vh, 100% 85vh, 0 100%);
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.row {
+  justify-content: space-around;
+  height: 340px;
+  width: 100%;
+  flex-direction: row;
+  background-color: transparent;
+  display: flex;
+  list-style: none;
+  position: absolute;
+  top: 30%;
+}
+
+.column {
+  height: 100%;
+  width: 100%;
+  margin-left: 35px;
+  margin-right: 35px;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-size: cover;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  border-radius: 25px;
+}
+
+.first {
+  height: 100%;
+  padding-top: 45%;
+  background-image: linear-gradient(to bottom ,
+      rgba(243, 228, 71, 0.3), hsla(34, 100%, 50%, 0.5)),
+    url(../img/shellim.jpeg);
+  border-radius: 25px;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  text-transform: translateY(50px);
+}
+.second {
+  height: 100%;
+  padding-top: 45%;
+  background-image: linear-gradient(to bottom ,
+      rgba(243, 228, 71, 0.3), hsla(34, 100%, 50%, 0.5)),
+    url(../img/network.jpeg);
+  border-radius: 25px;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  text-transform: translateY(50px);
+  background-position: top;
+}
+.third {
+  height: 100%;
+  padding-top: 45%;
+  background-image: linear-gradient(to bottom ,
+      rgba(243, 228, 71, 0.3), hsla(34, 100%, 50%, 0.5)),
+    url(../img/aisd.png);
+  border-radius: 25px;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  text-transform: translateY(50px);
+}
+
+.column:hover {
+  transition: all .3s;
+  transform: translateY(-10px);
+  box-shadow: 25px 25px 30px rgba(0, 0, 0, .4);
+}
+
+
+.logo-box {
+  opacity: 0.1;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.logo:hover {
+  animation: rotate1 2s ease-out;
+}
+
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading-primary {
+  color: white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 50px;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 80px;
+  font-weight: 400;
+  letter-spacing: 25px;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 30px;
+  font-weight: 200;
+  letter-spacing: 24px;
+  animation-name: moveInRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(+100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes rotate1 {
+  0% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    0% {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+@keyframes showingOn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  animation: showingOn 1.5s ease-out;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all .2s;
+  position: relative;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, .2);
+}
+
+.btn:active,
+.nav-link:active {
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transform: translateY(-1px);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #777;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+.btn-white::after {
+  background-color: #fff;
+}
+
+.btn:hover::after {
+  transform: scale(1.4);
+  opacity: 0;
+}
+
+.btn-animated {
+  animation: showingOn .5s ease-out .75s animation-fill-mode:backwards;
+}

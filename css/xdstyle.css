@@ -1,0 +1,61 @@
+.main-nav {
+    position: relative;
+}
+/* magic starts */
+.level_1 > li > a::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    background-image: url('../img/moutnains.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 10px;
+    display: block;
+    width: 100%;
+}
+.level_1 > li:hover > a::after {
+    background-image: url('http://i.imgsafe.org/a5f53cc8bf.png');
+    z-index: 10;
+}
+/* magic ends */
+
+.main-nav .level_1 {
+    margin: 0;
+    display: inline-block;
+    background-color: #0E5780;
+    width: 100%;
+    position: relative;
+}
+
+.main-nav .level_1 li {
+    position: relative;
+}
+
+.main-nav .level_1 li:hover {
+    background-color: #f00;
+}
+
+.main-nav .level_1 > li {
+    display: block;
+    float: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+.main-nav .level_1 li a {
+    display: block;
+    padding: 10px;
+}
+
+.main-nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding-top: 15px;
+    background-color: #0f0;
+}
+
+.main-nav .level_1 > li:hover ul {
