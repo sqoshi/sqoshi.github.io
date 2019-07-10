@@ -199,9 +199,8 @@ body {
 
 .heading-primary-main {
   width: 100%;
-  position: relative;
   display: block;
-  font-size: 80px;
+  font-size: 10vh;
   font-weight: 400;
   letter-spacing: 25px;
   animation-name: moveInLeft;
