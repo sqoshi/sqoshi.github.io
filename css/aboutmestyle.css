@@ -219,6 +219,8 @@ body {
     right: 5%;
     top: 8%;
     -webkit-transform: translate(-5%, -50%);
+    transform: translate(-5%, -50%);
+
     z-index: 2;
   }
 
@@ -233,7 +235,7 @@ body {
     clip-path: circle(0px at 93% 8%);
     -webkit-clip-path: circle(0px at 93% 8%);
     -webkit-animation-delay: 1s;
-    transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
     text-transform: uppercase;
     z-index: 1;
   }
@@ -241,8 +243,8 @@ body {
   .dog.open {
     -webkit-animation-delay: 1s;
     zoom: 1;
-    clip-path: circle(150vh at 90% 0%);
-    -webkit-clip-path: circle(150vh at 90% 0%);
+    clip-path: circle(80% at 90% 0%);
+    -webkit-clip-path: circle(80% at 90% 0%);
   }
 }
 @keyframes moveInLeft {
