@@ -12,6 +12,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: #777;
+    /*  background-attachment: fixed;fajny styl*/
   background: linear-gradient(to left,rgba(232, 238, 241, 0.5),
       rgba(18, 22, 23, 0.7)),url(../img/waterfall.jpg);
 }
@@ -54,6 +55,7 @@ body {
   background-image: linear-gradient(to right top,
       rgba(0, 191, 255, 0.9), rgba(40, 178, 220, 0.7)),
     url(../img/moutnains.jpeg);
+
   background-size: cover;
   background-position: bottom;
   position: relative;
@@ -93,15 +95,15 @@ body {
   text-transform: uppercase;
   color: black;
   border-radius: 25px;
-  box-shadow:0px 30px 40px rgb(235, 241, 235);
+  box-shadow:0px 10px 70px rgb(235, 241, 235);
 }
 
 .first {
   display: list-item;
   height: 100%;
   padding-top: 45%;
-  background-image: linear-gradient(to bottom,
-      rgba(243, 228, 71, 0.3), hsla(34, 100%, 50%, 0.5)),
+  background-image: linear-gradient(to top,
+      rgb(15, 47, 226,0.5), hsl(290, 8%, 93%,0.6)),
     url(../img/shellim.jpeg);
   border-radius: 25px;
   background-size: cover;
@@ -112,8 +114,8 @@ body {
 .second {
   height: 100%;
   padding-top: 45%;
-  background-image: linear-gradient(to bottom,
-      rgba(243, 228, 71, 0.3), hsla(34, 100%, 50%, 0.5)),
+  background-image: linear-gradient(to top,
+      rgb(15, 47, 226,0.5), hsl(290, 8%, 93%,0.6)),
     url(../img/network.jpeg);
   border-radius: 25px;
   background-size: cover;
@@ -126,8 +128,8 @@ body {
 .third {
   height: 100%;
   padding-top: 45%;
-  background-image: linear-gradient(to bottom,
-      rgba(243, 228, 71, 0.3), hsla(34, 100%, 50%, 0.5)),
+  background-image: linear-gradient(to top,
+  rgb(15, 47, 226,0.5), hsl(290, 8%, 93%,0.6)),
     url(../img/aisd.png);
   border-radius: 25px;
   background-size: cover;
@@ -139,8 +141,8 @@ body {
 .fourth {
   height: 100%;
   padding-top: 45%;
-  background-image: linear-gradient(to bottom,
-      rgba(243, 228, 71, 0.3), hsla(34, 100%, 50%, 0.5)),
+  background-image: linear-gradient(to top,
+    rgb(15, 47, 226,0.5), hsl(290, 8%, 93%,0.6)),
     url(../img/compiler.jpg);
   border-radius: 25px;
   background-size: cover;
@@ -152,8 +154,8 @@ body {
 .fifth {
   height: 100%;
   padding-top: 45%;
-  background-image: linear-gradient(to bottom,
-      rgba(243, 228, 71, 0.3), hsla(34, 100%, 50%, 0.5)),
+  background-image: linear-gradient(to top,
+  rgb(15, 47, 226,0.5), hsl(290, 8%, 93%,0.6)),
     url(../img/chineese-checkers.png);
   border-radius: 25px;
   background-size: cover;
