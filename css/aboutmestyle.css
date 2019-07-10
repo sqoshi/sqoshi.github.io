@@ -71,6 +71,7 @@ body {
   background: linear-gradient(to top, rgba(7, 11, 12, 0.9),
       rgba(20, 232, 70, 0.7));
 }
+
 @media screen {
   .click-photo {
     animation: 1.2s moveInLeft ease-out;
@@ -131,101 +132,11 @@ body {
     cursor: pointer;
     right: 5%;
     top: 8%;
-    transform: translate(-5%, -50%);
-    z-index: 2;
-  }
-
-  .dog {
-    zoom: 1;
-    position: fixed;
-    background: linear-gradient(to top, rgba(7, 11, 12, 0.9),
-        rgba(20, 232, 70, 0.7));
-    height: 100%;
-    width: 100%;
-    flex-direction: column;
-    clip-path: circle(0px at 93% 8%);
-    -webkit-clip-path: circle(0px at 93% 8%);
-    -webkit-animation-delay: 1s;
-    transition: all 1s ease-out;
-    text-transform: uppercase;
-    z-index: 1;
-  }
-
-  .dog.open {
-    -webkit-animation-delay: 1s;
-    zoom: 1;
-    clip-path: circle(150vh at 90% 0%);
-    -webkit-clip-path: circle(150vh at 90% 0%);
-  }
-}
-@-webkit-media screen {
-  .click-photo {
-    animation: 1.2s moveInLeft ease-out;
-    text-align: center;
-    margin: auto;
-    position: absolute;
-    top:15%;
-    left:5%;
-    text-align: center;
-    height: 15%;
-    width: 70%;
-    position: absolute;
-    cursor: pointer;
-    box-shadow: 0px 10px 20px #3079cd;
-    transition: all 1s ease-out;
-  }
-  .click-education {
-    animation: 1.2s moveInRight ease-out;
-    text-align: center;
-    margin: auto;
-    position: absolute;
-    top:40%;
-    right:5%;
-    text-align: center;
-    height: 15%;
-    width: 70%;
-    position: absolute;
-    cursor: pointer;
-    box-shadow: 0px 10px 20px #3079cd;
-    transition: all 1s ease-out;
-  }
-  .click-hobby {
-    animation: 1.2s moveInLeft ease-out;
-    text-align: center;
-    margin: auto;
-    position: absolute;
-    top:65%;
-    left:5%;
-    text-align: center;
-    height: 15%;
-    width: 70%;
-    position: absolute;
-    cursor: pointer;
-    box-shadow: 0px 10px 20px #3079cd;
-    transition: all 1s ease-out;
-  }
-
-  .line {
-    width: 30px;
-    height: 4px;
-    background: white;
-    margin: 3px;
-  }
-
-  .hamburger {
-    animation: showingOn 1s ease-out;
-    position: fixed;
-    cursor: pointer;
-    right: 5%;
-    top: 8%;
     -webkit-transform: translate(-5%, -50%);
-    transform: translate(-5%, -50%);
-
     z-index: 2;
   }
 
   .dog {
-    zoom: 1;
     position: fixed;
     background: linear-gradient(to top, rgba(7, 11, 12, 0.9),
         rgba(20, 232, 70, 0.7));
@@ -235,14 +146,13 @@ body {
     clip-path: circle(0px at 93% 8%);
     -webkit-clip-path: circle(0px at 93% 8%);
     -webkit-animation-delay: 1s;
-    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
     text-transform: uppercase;
     z-index: 1;
   }
 
   .dog.open {
     -webkit-animation-delay: 1s;
-    zoom: 1;
     clip-path: circle(80% at 90% 0%);
     -webkit-clip-path: circle(80% at 90% 0%);
   }
