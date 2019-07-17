@@ -11,6 +11,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
+  background-position: cover;
   color: #777;
     /*  background-attachment: fixed;fajny styl*/
   background: linear-gradient(to left,rgba(232, 238, 241, 0.5),
