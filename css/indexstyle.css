@@ -102,18 +102,19 @@ background-size: cover;
   cursor: pointer;
   background-size: cover;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: black;
   border-radius: 25px;
   box-shadow: 0px 10px 70px rgb(235, 241, 235);
 }
 
 .first {
+
   display: list-item;
   height: 100%;
   padding-top: 45%;
   background-image: linear-gradient(to top,
-      rgb(15, 47, 226, 0.5), hsl(290, 8%, 93%, 0.6)),
+      rgb(15, 226, 226, 0.5), rgb(255, 255, 255, 0.6)),
     url(../img/shellim.jpeg);
   border-radius: 25px;
   background-size: cover;
@@ -125,7 +126,7 @@ background-size: cover;
   height: 100%;
   padding-top: 45%;
   background-image: linear-gradient(to top,
-      rgb(15, 47, 226, 0.5), hsl(290, 8%, 93%, 0.6)),
+      rgb(15, 226, 226, 0.5), rgb(255, 255, 255, 0.6)),
     url(../img/network.jpeg);
   border-radius: 25px;
   background-size: cover;
@@ -139,7 +140,7 @@ background-size: cover;
   height: 100%;
   padding-top: 45%;
   background-image: linear-gradient(to top,
-      rgb(15, 47, 226, 0.5), hsl(290, 8%, 93%, 0.6)),
+      rgb(15, 226, 226, 0.5), rgb(255, 255, 255, 0.6)),
     url(../img/aisd.png);
   border-radius: 25px;
   background-size: cover;
@@ -152,7 +153,7 @@ background-size: cover;
   height: 100%;
   padding-top: 45%;
   background-image: linear-gradient(to top,
-      rgb(15, 47, 226, 0.5), hsl(290, 8%, 93%, 0.6)),
+      rgb(15, 226, 226, 0.5), rgb(255, 255, 255, 0.6)),
     url(../img/compiler.jpg);
   border-radius: 25px;
   background-size: cover;
@@ -165,7 +166,7 @@ background-size: cover;
   height: 100%;
   padding-top: 45%;
   background-image: linear-gradient(to top,
-      rgb(15, 47, 226, 0.5), hsl(290, 8%, 93%, 0.6)),
+      rgb(15, 226, 226, 0.5), rgb(255, 255, 255, 0.6)),
     url(../img/chineese-checkers.png);
   border-radius: 25px;
   background-size: cover;
@@ -341,48 +342,6 @@ background-size: cover;
 }
 
 @media screen {
-  .line {
-    width: 30px;
-    height: 4px;
-    background: white;
-    margin: 3px;
-  }
-
-  .hamburger {
-    animation: showingOn 1s ease-out;
-    position: fixed;
-    cursor: pointer;
-    right: 5%;
-    top: 8%;
-    transform: translate(-5%, -50%);
-    z-index: 2;
-  }
-
-  .dog {
-    zoom: 1;
-    position: fixed;
-    background: linear-gradient(rgba(12, 28, 33, 0.9),
-        rgba(40, 178, 220, 0.95));
-    height: 100%;
-    width: 100%;
-    flex-direction: column;
-    clip-path: circle(0px at 93% 8%);
-    -webkit-clip-path: circle(0px at 93% 8%);
-    -webkit-animation-delay: 1s;
-    transition: all 1s ease-out;
-    text-transform: uppercase;
-    z-index: 1;
-  }
-
-  .dog.open {
-    -webkit-animation-delay: 1s;
-    zoom: 1;
-    clip-path: circle(150vh at 90% 0%);
-    -webkit-clip-path: circle(150vh at 90% 0%);
-  }
-}
-
-@-webkit-media screen {
   .line {
     width: 30px;
     height: 4px;

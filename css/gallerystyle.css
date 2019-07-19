@@ -8,11 +8,9 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-image: url(../img/my.jpg);
-  background-size: cover;
 }
 
 .wraper {
-  background-attachment: scroll;
   height: 100%;
   overflow: hidden;
   width: 100%;
@@ -81,4 +79,9 @@ body {
   position: relative;
   margin-bottom: 0;
   font-size: 60px;
+}
+@media{
+  .menu li a{
+
+  }
 }
