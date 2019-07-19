@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+.wraper {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 body {
   overflow-x: hidden;
   position: relative;
