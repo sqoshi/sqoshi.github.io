@@ -341,7 +341,7 @@ background-size: cover;
   }
 }
 
-@media screen {
+@media only screen {
   .line {
     width: 30px;
     height: 4px;
