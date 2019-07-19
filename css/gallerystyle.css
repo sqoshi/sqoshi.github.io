@@ -12,6 +12,7 @@ body {
 }
 
 .wraper {
+  background-attachment: scroll;
   height: 100%;
   overflow: hidden;
   width: 100%;
