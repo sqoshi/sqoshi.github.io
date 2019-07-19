@@ -355,7 +355,7 @@ background-size: cover;
     cursor: pointer;
     right: 5%;
     top: 8%;
-    transform: translate(-5%, -50%);
+    -webkit-transform: translate(-5%, -50%);
     z-index: 2;
   }
 
@@ -370,7 +370,7 @@ background-size: cover;
     clip-path: circle(0px at 93% 8%);
     -webkit-clip-path: circle(0px at 93% 8%);
     -webkit-animation-delay: 1s;
-    transition: all 1s ease-out;
+    -webkittransition: all 1s ease-out;
     text-transform: uppercase;
     z-index: 1;
   }
