@@ -215,8 +215,8 @@ body {
 
   .dog.open {
     -webkit-animation-delay: 1s;
-    clip-path: circle(80% at 90% 0%);
-    -webkit-clip-path: circle(80% at 90% 0%);
+    clip-path: circle(150vh at 90% 0%);
+    -webkit-clip-path: circle(150vh at 90% 0%);
   }
 }
 

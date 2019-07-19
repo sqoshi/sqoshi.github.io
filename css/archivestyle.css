@@ -105,7 +105,7 @@ body {
   }
 
   .dog.open {
-    clip-path: circle(1400px at 90% -10%);
-    -webkit-clip-path: circle(1400px at 90% -10%);
+    clip-path: circle(150vh at 90% -10%);
+    -webkit-clip-path: circle(150vh at 90% -10%);
   }
 }
