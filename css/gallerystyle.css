@@ -9,7 +9,7 @@ body {
   background-repeat: no-repeat;
   background-image: url(../img/my.jpg);
   background-size: cover;
-  height: 200%;
+  height: 200vh;
 }
 
 .wraper {
