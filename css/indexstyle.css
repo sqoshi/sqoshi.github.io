@@ -16,8 +16,6 @@
 }
 
 body {
-  overflow-x: hidden;
-  position: relative;
   margin-top: auto;
   font-family: Verdana;
   font-weight: 400;

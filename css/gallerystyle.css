@@ -26,7 +26,6 @@ body {
   transform: translateY(10%);
   width: 100%;
   height: 180vh;
-  margin: 0;
 }
 
 .first {
@@ -64,14 +63,17 @@ body {
   height: 10%;
   display: flex;
   list-style: none;
-
   align-items: center;
   justify-content: space-around;
 }
-li{
-  color:white;
-    text-decoration: none;
+.menu li a{
+  color: white;
+  text-decoration: none; // pozbycie sie podkreslenia linku
+  font-size: 16px;
+  text-transform:capitalize;
+
 }
+
 
 .Welcome {
   color: #34cb7d;
