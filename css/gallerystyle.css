@@ -51,6 +51,7 @@ body {
 }
 
 .menu {
+  color: white;
   position: fixed;
   top: 0;
   margin: auto;
