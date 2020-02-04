@@ -3,7 +3,6 @@ const dog = document.querySelector(".dog");
 const links = document.querySelectorAll(".dog li");
 
 hamburger.addEventListener('click', () => {
-
   dog.classList.toggle("open");
 });
 
@@ -14,9 +13,11 @@ const column = document.querySelector(".column");
 const first = document.querySelector(".first");
 const second = document.querySelector(".second");
 const third = document.querySelector(".third");
+const fourth = document.querySelector(".fourth");
+const fifth = document.querySelector(".fifth");
 
 first.addEventListener('click', () => {
-  window.open('https://github.com/sqoshi/AKISO/blob/master/L4/z3.c',
+  window.open('https://github.com/sqoshi/computers-architecture-and-operating-systems/blob/master/list05/exercise3.c',
   'blank');
 });
 second.addEventListener('click', () => {
@@ -24,6 +25,14 @@ second.addEventListener('click', () => {
   'blank');
 });
 third.addEventListener('click', () => {
-  window.open('https://github.com/sqoshi/AISD',
+  window.open('https://github.com/sqoshi/go-game',
+  'blank');
+});
+fourth.addEventListener('click', () => {
+  window.open('https://github.com/sqoshi/compiler',
+  'blank');
+});
+fifth.addEventListener('click', () => {
+  window.open('https://github.com/sqoshi/database-project',
   'blank');
 });
