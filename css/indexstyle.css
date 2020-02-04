@@ -124,6 +124,7 @@ background-size: cover;
 }
 
 .second {
+  text-align: center;
   height: 100%;
   padding-top: 45%;
   background-image: linear-gradient(to top,
