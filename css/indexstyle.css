@@ -78,6 +78,7 @@ background-size: cover;
 }
 
 .row {
+  font-family: "Times New Roman", Times, serif;
   padding: auto;
   justify-content: space-around;
   height: 35%;
