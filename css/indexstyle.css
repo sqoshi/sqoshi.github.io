@@ -78,6 +78,7 @@ background-size: cover;
 }
 
 .row {
+  text-align: center;
   font-family: "Times New Roman", Times, serif;
   padding: auto;
   justify-content: space-around;
@@ -93,6 +94,7 @@ background-size: cover;
 }
 
 .column {
+  text-align: center;
   padding: auto;
   height: 100%;
   width: 100%;
