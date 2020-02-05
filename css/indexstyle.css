@@ -229,7 +229,12 @@ background-size: cover;
 }
 @media screen and (max-width: 600px) {
   .heading-primary-main {
+    margin-top: 30%;
     font-size: 30px;
+  }
+  .heading-primary-main {
+    margin-top: 40%;
+    font-size: 15px;
   }
 }
 
