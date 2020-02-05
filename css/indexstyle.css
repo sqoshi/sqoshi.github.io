@@ -16,6 +16,7 @@
 }
 
 body {
+  font-family: "Times New Roman", Times, serif;
   height: 100%;
   width: 100%;
   margin-top: auto;
@@ -176,7 +177,6 @@ background-size: cover;
   background-size: cover;
   background-position: center;
   align-items: center;
-  text-transform: translateY(50px);
 }
 
 .column:hover {
