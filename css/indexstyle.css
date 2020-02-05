@@ -228,7 +228,7 @@ background-size: cover;
   animation-timing-function: ease-out;
 }
 @media screen and (max-width: 600px) {
-  div.heading-primary-main {
+  .heading-primary-main {
     font-size: 30px;
   }
 }
