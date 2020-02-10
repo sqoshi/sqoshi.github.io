@@ -1,0 +1,21 @@
+Cześć wszystkim, pisałem ostatnio do mgr. Gotfryda z prośbą, żeby polecił jakieś zbiorki zadań z JFTT. Takiego maila dostałem w odpowiedzi 😉:
+
+Linki:
+https://www.mimuw.edu.pl/~szymtor/jao/
+https://sites.google.com/view/200problems
+https://www.mimuw.edu.pl/~niwinski/Notatki/JAO/Janosik8.pdf
+https://www.ii.uni.wroc.pl/~jma/kurs.phtml
+https://www.ii.uni.wroc.pl/~jma/zbior-2019.pdf
+http://arsenicrose.pl/files/jfizo/jfizo.pdf
+http://infolab.stanford.edu/~ullman/ialc.html
+http://wazniak.mimuw.edu.pl/index.php?title=Podstawy_kompilator%C3%B3w
+
+Mail od Gotfryda:
+
+Przede wszystkim warto zajrzeć na stronę podobnego kursu z UW - https://www.mimuw.edu.pl/~szymtor/jao/
+To  są materiały do kursu z semestru Lato 2018/2019, ale na dole strony są  linki do starszych edycji kursu (warto zwrócić uwagę m.in. na materiały  D. Niwińskiego oraz prof. Ryttera).
+Oprócz materiałów z wykładów, dziesiątek przykładowych kolokwiów i egzaminów wraz z rozwiązaniami itp. jest zbiór zadań – 200 Problems in Formal Languages ans Automata Theory wraz z wybranymi rozwiązaniami. Jest jeszcze polska wersja (wcześniejsza) – dostępna tutaj.
+UWAGA!  Ten kurs obejmuje nie tylko teorię języków regularnych, automatów  skończonych oraz jęz. bezkontekstowych, gramatyk oraz PDA, lecz także  teorię obliczeń oraz złożoność obliczeniową. U nas te zagadnienia  omawiane są na kursie wybieralnym z Teoretycznych Podstaw Informatyki  oraz na II stopniu (Teoria Obliczeń i Złożoność Obliczneiowa). Więc  muszą Państwo „odfiltrować” zadania, które nas nie dotyczą. Część zadań  jest prosta, ale są tam też zadania trudne. Uprzedzam ewentualne pytania  – dr Gębala też zna ten zbiór, w październiku podesłałem mu go :)
+Drugie miejsce, do którego warto zajrzeć, to strona kursu „Języki formalne…” – Informatyka UWr. Tu są materiały do kursu prof. Marcinkowskiego. W tym doskonale nam znany zbiór zadań.  W sieci można do niego znaleźć rozwiązania (one czasem też potrafią się  przypadkowo załączyć do maila :), chociaż widzę też jakąś nowszą wersję).  Ale UWAGA! To nie są oficjalne rozwiązania i mogą zawierać błędy, więc  absolutnie nie odpowiadam za to, że ktoś z Państwa nauczy się z tego  jakiejś bzdury. :) Aczkolwiek z tego, co przeglądałem, to nie ma  tragedii.
+Tutaj podobnie – kurs obejmuje zagadnienia z języków formalnych i teorii obliczeń – nas interesuje to pierwsze.
+W  pierwszej kolejności polecam dwa powyższe źródła zadań. Co do innych  materiałów – można sobie rzucić okiem na strony kursów prowadzone przez  autorów podręczników, z których korzystamy (m.in. strona Jeffa Ullmana)  oraz na „Ważniaka” – linki są na mojej stronie. Wydaje mi się, że w tych miejscach jest tyle przykładów, że powinno Państwu wystarczyć.
