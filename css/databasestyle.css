@@ -30,6 +30,7 @@ body {
   text-decoration-skip: objects;
   text-align: center;
   margin: auto;
+  vertical-align: middle;
 }
 .Welcome {
   text-align: center;
