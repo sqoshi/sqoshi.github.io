@@ -122,12 +122,14 @@ body {
 }
 
 .first {
+  opacity: 0.8;
   display: list-item;
   height: 100%;
-  padding-top: 45%;
-  background-image: linear-gradient(to top,
-      rgb(15, 226, 226, 0.5), rgb(255, 255, 255, 0.6)),
-    url(../img/shellim.jpeg);
+  padding-top: 25%;
+  font-size: 30px;
+  background: #434343;
+  background: linear-gradient(to top,
+      #434343, white);
   border-radius: 25px;
   background-size: cover;
   background-position: center;
@@ -137,11 +139,13 @@ body {
 .second {
   text-align: center;
   height: 100%;
-  padding-top: 45%;
-  background-image: linear-gradient(to top,
-      rgb(15, 226, 226, 0.5), rgb(255, 255, 255, 0.6)),
-    url(../img/network.jpeg);
+  padding-top: 25%;
+  font-size: 30px;
+  background: linear-gradient(to top,
+      #434343, white);
   border-radius: 25px;
+  opacity: 0.8;
+
   background-size: cover;
   background-position: center;
   align-items: center;
@@ -151,10 +155,12 @@ body {
 
 .third {
   height: 100%;
-  padding-top: 45%;
-  background-image: linear-gradient(to top,
-      rgb(15, 226, 226, 0.5), rgb(255, 255, 255, 0.6)),
-    url(../img/aisd.png);
+  padding-top: 25%;
+  opacity: 0.8;
+
+  font-size: 30px;
+  background: linear-gradient(to top,
+      #434343, white);
   border-radius: 25px;
   background-size: cover;
   background-position: center;
@@ -164,10 +170,11 @@ body {
 
 .fourth {
   height: 100%;
-  padding-top: 45%;
-  background-image: linear-gradient(to top,
-      rgb(15, 226, 226, 0.5), rgb(255, 255, 255, 0.6)),
-    url(../img/compiler.jpg);
+  opacity: 0.8;
+  padding-top: 25%;
+  font-size: 30px;
+  background: linear-gradient(to top,
+      #434343, white);
   border-radius: 25px;
   background-size: cover;
   background-position: center;
@@ -177,11 +184,12 @@ body {
 
 .fifth {
   height: 100%;
-  padding-top: 45%;
-  background-image: linear-gradient(to top,
-      rgb(15, 226, 226, 0.5), rgb(255, 255, 255, 0.6)),
-    url(../img/chineese-checkers.png);
+  padding-top: 25%;
+  font-size: 30px;
+  background: linear-gradient(to top,
+      #434343, white);
   border-radius: 25px;
+  opacity: 0.8;
   background-size: cover;
   background-position: center;
   align-items: center;
@@ -213,6 +221,7 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
 
 .heading-primary {
   color: white;

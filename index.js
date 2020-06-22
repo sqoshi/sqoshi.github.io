@@ -16,22 +16,22 @@ const fourth = document.querySelector(".fourth");
 const fifth = document.querySelector(".fifth");
 
 first.addEventListener('click', () => {
-  window.open('https://github.com/sqoshi/computers-architecture-and-operating-systems/blob/master/list05/exercise3.c',
+  window.open('https://instagram.com/pette_boy64',
   'blank');
 });
 second.addEventListener('click', () => {
-  window.open('https://github.com/sqoshi/TS',
+  window.open('https://www.facebook.com/piotr.popis',
   'blank');
 });
 third.addEventListener('click', () => {
-  window.open('https://github.com/sqoshi/go-game',
+  window.open('https://github.com/sqoshi/',
   'blank');
 });
 fourth.addEventListener('click', () => {
-  window.open('https://github.com/sqoshi/compiler',
+  window.open('https://www.linkedin.com/in/piotr-popis/',
   'blank');
 });
 fifth.addEventListener('click', () => {
-  window.open('https://github.com/sqoshi/database-project',
+  window.open('https://www.icloud.com',
   'blank');
 });
