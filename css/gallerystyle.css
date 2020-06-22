@@ -26,37 +26,144 @@ body {
 .articles {
   transform: translateY(10%);
   width: 100%;
-  height: 280vh;
+  height: 850vh;
 }
-.Welcome {
-  text-align: center;
-  position: absolute;
-  top: 20vh;
-  left: 20%;
+
+.techs {
+  text-align: left;
+  position: relative;
+  top: 5%;
+  left: 55%;
   width: 100%;
   right: 20%;
   color: #000000;
-  font-size: 40px;
+  font-size: 18px
 }
+
+.proav {
+  margin-top: -15%;
+  margin-bottom: 35%;
+  margin-left: 70%;
+  margin-right: 5%;
+  width: 640px;
+  padding: 100px;
+  position: relative;
+  border-radius: 2%;
+  left: inherit;
+  width: 50vh;
+  height: 30vh;
+  width: 50vh;
+  background-image: url(../img/projects/termi.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: transform .2s;
+}
+
+.proav:hover {
+  transform: scale(2.15) translateX(-50%);
+}
+
+h1 {
+  margin-left: 15%;
+  padding-top: 3%;
+  transition: transform .2s;
+  text-decoration: none;
+  list-style: none;
+}
+
+h1:hover {
+  transform: translateX(5%);
+}
+
+a {
+  text-decoration: none
+}
+
+.head {
+  vertical-align: top;
+  display: inline;
+  padding-top: 3%;
+}
+
+article {
+  position: relative;
+  padding-left: 10%;
+  padding-right: 40%;
+}
+
+.giticon {
+  position: relative;
+  width: 12vh;
+  background-size: cover;
+  text-decoration: none;
+  height: 12vh;
+  margin-top: -4%;
+  margin-left: 5%;
+  background-position: top;
+  background-image: url(../img/git.png);
+  animation: vibrate 1s linear infinite both;
+}
+
+.giticon:hover {
+  -webkit-animation: slide-fwd-center .45s linear both;
+  animation: slide-fwd-center .45s linear both
+}
+
+@-webkit-keyframes slide-fwd-center {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+  }
+
+  100% {
+    -webkit-transform: translateZ(160px);
+    transform: translateZ(160px)
+  }
+}
+
+@keyframes slide-fwd-center {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+  }
+
+  100% {
+    -webkit-transform: translateZ(160px);
+    transform: translateZ(160px)
+  }
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  20% {
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    transform: translate(2px, 2px);
+  }
+
+  80% {
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
 .first {
+  margin-top: -35%;
   height: 50vh;
   background: linear-gradient(to top, rgba(158, 158, 158, 0.9),
       rgba(255, 255, 255, 0.7));
-}
-
-.face {
-  border: 1px solid #ddd;
-  margin: auto;
-  top: 5vh;
-  right: 5vh;
-  position: absolute;
-  border-radius: 40%;
-  left: inherit;
-  width: 30vh;
-  background-size: cover;
-  height: 40vh;
-  background-position:top;
-  background-image: url(../img/face.jpg);
 }
 
 .second {
@@ -66,34 +173,65 @@ body {
   height: 50vh;
 }
 
-.third {
-  background: linear-gradient(to top, rgba(158, 158, 158, 0.9),
-      rgba(255, 255, 255, 0.7));
-  margin-top: 20%;
-  height: 50vh;
-}
-
-.menu {
-  position: fixed;
-  top: 0;
-  margin: auto;
-  left: 0;
-  right: 0;
-  width: 100%;
-  background: linear-gradient(to top right, rgba(0, 0, 0, 1),
-      rgba(173, 168, 168, 1));
-  z-index: 2;
-  width: 100%;
-  height: 10%;
+.dog {
+  z-index: -1;
   display: flex;
   list-style: none;
-  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
   justify-content: space-around;
+  /*rozklada na oddzielne slowa rodziela i horyzont*/
+  align-items: center;
+  flex-direction: column;
+  /*centruje w danym panelu*/
 }
 
-.menu li a {
+.dog li a {
   color: white;
   text-decoration: none; // pozbycie sie podkreslenia linku
   font-size: 16px;
-  text-transform: capitalize;
+}
+
+@media only screen {
+  .line {
+    width: 30px;
+    height: 4px;
+    background: white;
+    margin: 3px;
+  }
+
+  .hamburger {
+    animation: showingOn 1s ease-out;
+    position: fixed;
+    cursor: pointer;
+    right: 5%;
+    top: 8%;
+    -webkit-transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .dog {
+    zoom: 1;
+    position: fixed;
+    background: linear-gradient(rgba(12, 28, 33, 0.9),
+        rgba(40, 178, 220, 0.95));
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(0px at 93% 8%);
+    -webkit-clip-path: circle(0px at 93% 8%);
+    -webkit-animation-delay: 1s;
+    -webkit-transition: all 1s ease-out;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+
+  .dog.open {
+    -webkit-animation-delay: 1s;
+    zoom: 1;
+    clip-path: circle(150vh at 90% 0%);
+    -webkit-clip-path: circle(150vh at 90% 0%);
+  }
 }

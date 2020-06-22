@@ -7,7 +7,6 @@ hamburger.addEventListener('click', () => {
 });
 
 
-
 const row = document.querySelector(".row");
 const column = document.querySelector(".column");
 const first = document.querySelector(".first");

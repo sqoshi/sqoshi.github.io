@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: Ubuntu, "times new roman", times, roman, serif;
   height: 100%;
   width: 100%;
   margin-top: auto;
@@ -28,8 +28,15 @@ body {
   /*  background-attachment: fixed;fajny styl*/
   background: linear-gradient(to left, rgba(232, 238, 241, 0.5),
       rgba(18, 22, 23, 0.7)), url(../img/waterfall.jpg);
-background-position: center;
-background-size: cover;
+  background-position: center;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url(http://example.com/fonts/ubuntu.woff) format('woff');
 }
 
 .dog {
@@ -63,7 +70,6 @@ background-size: cover;
   position: relative;
   -webkit-clip-path: polygon(0 10%, 100% 20%, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-
 }
 
 .sectionforcards {
@@ -116,7 +122,6 @@ background-size: cover;
 }
 
 .first {
-
   display: list-item;
   height: 100%;
   padding-top: 45%;
@@ -227,11 +232,13 @@ background-size: cover;
   animation-duration: 2s;
   animation-timing-function: ease-out;
 }
+
 @media screen and (max-width: 600px) {
   .heading-primary-main {
     margin-top: 30%;
     font-size: 30px;
   }
+
   .heading-primary-sub {
     margin-top: 40%;
     font-size: 20px;
@@ -358,6 +365,20 @@ background-size: cover;
   }
 }
 
+@keyframes blinkx {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+  0% {
+    opacity: 0;
+  }
+}
+
 @media only screen {
   .line {
     width: 30px;
@@ -397,5 +418,103 @@ background-size: cover;
     zoom: 1;
     clip-path: circle(150vh at 90% 0%);
     -webkit-clip-path: circle(150vh at 90% 0%);
+  }
+}
+
+.arrow {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.arrow span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-right: 5px solid white;
+  border-bottom: 5px solid white;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+.tixddd {
+  text-align: center;
+  padding: auto;
+  color: white;
+  justify-content: space-around;
+  height: 35%;
+  flex-direction: row;
+  background-color: transparent;
+  display: flex;
+  position: absolute;
+  left: 10%;
+  width: 20%;
+}
+
+.projectsmove {
+  padding: auto;
+  color: white;
+  height: 35%;
+  display: flex;
+  position: absolute;
+  -webkit-animation: showingOn 3s infinite;
+}
+
+.langlist {
+  text-align: left;
+  padding: auto;
+  justify-content: space-around;
+  background-color: transparent;
+  display: flex;
+  list-style: none;
+  position: absolute;
+  top: 35%;
+  color: white;
+}
+
+li ul li {
+  margin-left: 5%;
+  animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes move-left {
+  0% {
+    opacity: 0;
+    transform: translate(100, -20px);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(20px, -20px);
   }
 }
