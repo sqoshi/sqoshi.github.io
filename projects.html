@@ -1,268 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/projectsstyle.css">
-  <link rel="shortcut icon" type="image/png" href="img/wolf-white.png">
-  <title>popsite</title>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+  <link rel="stylesheet" href="resources/css/main.css">
+  <script type="text/javascript" src="resources/js/main.js"></script>
+  <title></title>
 </head>
 
 <body>
-  <div class="wraper">
-    <div class="hamburger">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
+  <nav id="menu">
+    <div id='menu-header'>
+      <a id='menu-logo-a' href="main.html"><img id='menu-logo-img' src="resources/img/logo_wolf_white.png" /></img></a>
+      <svg id='menu-icon' onclick='toggle_menu()' viewBox="0 0 100 80">
+        <rect class='hamburger-rect'></rect>
+        <rect class='hamburger-rect' y="30"></rect>
+        <rect class='hamburger-rect' y="60"></rect>
+      </svg>
     </div>
-    <ul class="dog">
-      <li><a href="index.html">HOME </a></li>
-      <li><a href="archive.html">login </a></li>
-      <li><a href="aboutme.html">about me </a></li>
-      <li><a href="projects.html">Projects </a></li>
-    </ul>
-
-    <div class="articles">
-      <div class="first">
-        <div class="head">
-          <h1>
-            <a href="https://github.com/sqoshi/zalando-shopping-bot">
-              Zalando Longue Shopping Bot
-            </a>
-          </h1>
-          <div class="giticon"></div>
-        </div>
-        <article>Shopping bot for sales on zalando longue created with python using selenium.
-          In pair with interface that has been wrote with PyQt5. Main system is enriched by multiple subsystems like logging,
-          registration, data validation, filtration, multi- boting.
-          There is posibility to store configurations in online database (nosql) firebase.
-          There is additive option to send mails to the user when boting is finished.
-          Can be set up to future date. Bot can work on multiple accounts and that means if the shopping cart is full he swaps to next account from config etc.
-        </article>
-        <div class="techs">
-          <ul>
-            <li>Python</li>
-            <li>Selenium</li>
-            <li>Firebase( Pyrebase)</li>
-            <li>PyQt5</li>
-            <li>smtplib</li>
-          </ul>
-        </div>
-        <div class="proav" style="background-image:url(img/projects/sb.png);"></div>
-      </div>
-      <div class="second">
-        <div class="head">
-          <h1>
-            <a href="https://github.com/sqoshi/advertisement-webapp">
-              Announce Web App
-            </a>
-          </h1>
-          <div class="giticon">
-          </div>
-        </div>
-        <article>
-          Web Application with multiple subsystems like management, logging , registration etc. Allows user to create and post announcements (like math private lessons or some items like old books etc). Something like polish OLX. Each user can have
-          multiple(1...*) announcements and
-          can check others and contact them if they are interested in. They are also permitted to edit their own profile, own announcements and delete them whenever they want. Client app made with requests. Templates for frontend created with
-          in HTML and CSS. Announces and users are stored in sqlite database.
-          REST-API fulfills Richardson second criteria(CRUD).All functionalities were tested with Postman. </article>
-        <div class="techs">
-          <ul>
-            <li>Python</li>
-            <li>Flask</li>
-            <li>Requests</li>
-            <li>Postman</li>
-            <li>SQLite</li>
-            <li>HTML/ CSS</li>
-          </ul>
-        </div>
-        <div class="proav" style="background-image:url(img/projects/aa.png);"></div>
-      </div>
-      <div class="second">
-        <div class="head">
-          <h1>
-            <a href="https://github.com/sqoshi/neural-network-designer">
-              Neural Network Designer
-            </a>
-          </h1>
-          <div class="giticon"></div>
-        </div>
-        <article>
-          Program for neural network designer.
-          So let's suppose we have to design neural network model, specifically we have to select
-          quantity of layers and then quantity of neurons and activation functions for each layer.
-          This program with given function for example x**2, and concrete interval finds an optimal
-          model using metaheuristics.
-          <br>[Details] Program had been made with Python using Django. All templates had been created with HTML, CSS and Javascript.
-          User has posibility to pass his own model that he need to optimize or use random initial model. The quantity- choosing and all activations could be set by the user.
-          <br>
-          ***Program has also possibility to detect objects on image using RetinaNet Focal Loss for Dense Object Detection.
-          Model were learned on COCO object detection dataset.*** [EDIT](This part of program has been moved to another (not finished) project)
-        </article>
-        <div class="techs">
-          <ul>
-            <li>Python</li>
-            <li>Django</li>
-            <li>keras</li>
-            <li>tensorflow</li>
-            <li>sklearn</li>
-            <li>numpy</li>
-            <li>matplotlib</li>
-            <li>HTML/CSS</li>
-            <li>Javascript</li>
-          </ul>
-        </div>
-        <div class="proav" style="background-image:url(img/projects/nn.svg);"></div>
-      </div>
-      <div class="second">
-        <div class="head">
-          <h1> Trip optimizer<a href="https://github.com/sqoshi/metaheuristic-alghoritms/blob/master/local_tabu_search/tabu_search_TSP/z2.py">
-              TS
-            </a>
-            <a href="https://github.com/sqoshi/metaheuristic-alghoritms/blob/master/population_based/genetic_algorithm_TSP/ga_tsp.py">
-              EBGA
-            </a>
-          </h1>
-          <div class="giticon"></div>
-        </div>
-        <article>
-          So lets say we want to travel from city A to city B.We also have a map in which we can find some indirect
-          cities between A and B. Program using some metaheuristics( genetic algorithm) finds the most optimal
-          trace( minimal distance) by mutations, crossovers, selection and some reproduction.
-        </article>
-        <div class="techs">
-          <ul>
-            <li>Python</li>
-            <li>numpy</li>
-            <li>matplotlib</li>
-          </ul>
-        </div>
-        <div class="proav" style="background-image:url(img/projects/to.png);margin-top:-7%"></div>
-      </div>
-      <div class="second">
-        <div class="head">
-          <h1><a href="https://github.com/sqoshi/metaheuristic-alghoritms/tree/master/population_based/genetic_algorithm_scrabble/limited_dict">
-              Scrabble Hack
-            </a>
-          </h1>
-          <div class="giticon"></div>
-        </div>
-        <article>
-          So when we play scrabble we have a set of letters and we need to create a word, but words are weighted
-          so we want to maximalize punctation by creating as good words as only we can.
-          This program can find the best word that we can build with our set.
-          create using metaheurstics and win it for us. Have a nice cheat!
-        </article>
-        <div class="techs">
-          <ul>
-            <li>Python</li>
-            <li>numpy</li>
-            <li>matplotlib</li>
-          </ul>
-        </div>
-        <div class="proav" style="background-image:url(img/projects/sc.png);margin-top:-7%"></div>
-      </div>
-      <div class="second">
-        <div class="head">
-          <h1>Agent Walk
-            <a href="https://github.com/sqoshi/metaheuristic-alghoritms/blob/master/local_tabu_search/tabu_search_TSP/z2.py">TS
-            </a>
-            <a href="https://github.com/sqoshi/metaheuristic-alghoritms/blob/master/simulated_annealing/sa_agent_walk/__init__.py">SA
-            </a>
-            <a href="https://github.com/sqoshi/metaheuristic-alghoritms/blob/master/population_based/genetic_algorithm_agent_walk_mul/__init__.py">GA
-            </a>
-          </h1>
-          <div class="giticon"></div>
-        </div>
-        <article>
-          So program is a simulation of finding closest to the start position exit of 2D labyrinth with mutiple exit- gates, walls inside.
-          Agent does not know his own position. Program using metaheuristics like population based - genetic algortihm, simulated annealing and tabu search finds very optimal trace.
-        </article>
-        <div class="techs">
-          <ul>
-            <li>Python</li>
-            <li>numpy</li>
-            <li>matplotlib</li>
-          </ul>
-        </div>
-        <div class="proav" style="background-image:url(img/projects/sa.png);margin-top:-7%"></div>
-      </div>
-      <div class="second">
-        <div class="head">
-          <h1>
-            <a href="https://github.com/sqoshi/go-game">
-              Go Game </a>
-          </h1>
-          <div class="giticon"></div>
-        </div>
-        <article>
-          Java system that allows clients to play go game. Gamers can play 1 vs 1 using server or try to win with computer- player.
-          Bot peforms not bad moves. He find opponents minimal-breaths group and then trying to kill/ block it. At the same time he is observing his own stone- groups.
-          If opponent is close to enslave any of his groups he is trying to extend this group by adding more stones to it or just break opponents "trap // cage". Client using server connects to lobby and starts a game.
-        </article>
-        <div class="techs">
-          <ul>
-            <li>Java</li>
-            <li>JavaFX</li>
-            <li>jUnit</li>
-            <li>Maven</li>
-            <li>Client- Server architecture</li>
-            <li>Not bad bot (computer player)</li>
-          </ul>
-        </div>
-        <div class="proav" style="background-image:url(img/projects/gg.png);margin-top:-14%"></div>
-      </div>
-      <div class="second">
-        <div class="head">
-          <h1>
-            <a href="https://github.com/sqoshi/Warriors-of-Enartia">
-              Warriors of Enartia
-            </a>
-          </h1>
-          <div class="giticon"></div>
-        </div>
-        <article>
-          It is a role play game which relies on improving your champion. Each gamer need to have an account registered in database
-          then data is being verificated during logging process. There are few classes such as Mage, Archer, Warriros. Herroes on his way need to earn gold and improve his
-          equipment. Gamer is earning gold by sending champion on dungeons which might not be successful. Gamers are being compared in ranking by equipment.
-          Game is opened for extension. Contains user interface, admin interface, registration subsystem, logging, banning/ rewarding subsystem etc.
-        </article>
-        <div class="techs">
-          <ul>
-            <li>Java</li>
-            <li>MySQL</li>
-            <li>Swing</li>
-            <li>Maven</li>
-          </ul>
-        </div>
-        <div class="proav" style="background-image:url(img/projects/woe.jpg);margin-top:-14%"></div>
-      </div>
-      <div class="second">
-        <div class="head">
-          <h1>
-            <a href="https://github.com/sqoshi/data-compression-and-coding/tree/master/List05_and_List06">
-              Data Compressor/ Decompressor
-            </a>
-          </h1>
-          <div class="giticon"></div>
-        </div>
-        <article>
-          Program can be used as coder/ decoder in information transaction or to save data on device by compressing unused files etc.
-          Program firstly codes data to indexes using Lempel Ziv Welch alghoritm and nextly codes indexes with Elias Omega, Gamma, Delta or Fibbonacci coding.
-          Supports coding for symbols that are biggern than 8 bits. Can be also used to decompression/ decoding.
-        </article>
-        <div class="techs">
-          <ul>
-            <li>Java</li>
-          </ul>
-        </div>
-        <div class="proav" style="background-image:url(img/projects/box.png);margin-top:-7%;"></div>
-      </div>
-    </div>
-  </div>
-  <script src="index.js"></script>
+    <nav id='menu-links' class='menu-links'>
+      <a class='link' href="main.html">Home</a>
+      <a class='link' href="projects.html">Projects</a>
+    </nav>
+  </nav>
 </body>
 
 </html>
