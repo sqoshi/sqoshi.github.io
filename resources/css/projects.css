@@ -118,14 +118,16 @@ body {
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 2rem;
+  overflow: auto;
 }
 
 .readme {
   min-height: 50vw;
-  overflow: scroll;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .readme pre, code {
+  overflow: auto;
   max-width: 80%;
-  font-size:
 }
