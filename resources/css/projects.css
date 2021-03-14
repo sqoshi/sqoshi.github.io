@@ -123,6 +123,7 @@ body {
 
 .readme {
   min-height: 50vw;
+  overflow: scroll;
 }
 
 .readme pre, code {
