@@ -24,7 +24,7 @@
     </nav>
   </nav>
   <section id='hero'>
-    <section class='column'>
+    <section class='column' id='intro-container'>
       <!-- below intro maybe a section ?-->
       <div id='intro'>
         <h1> Computer Science Student & Software Developer </h1>
@@ -38,48 +38,55 @@
   <section id='it-interests-container'>
     <section class='column'>
       <section id='it-interests' class='content'>
+        <h4 class='section-header'>Interests</h4>
         <div id='it-interests-text-container'>
-          <h4 class='section-header'>Interests<h4>
-              <a href='https://en.wikipedia.org/wiki/Metaheurisstic'>
-                <h5 class='interests-title'>Metaheuristics</h5>
-              </a>
-              Metaheuristics are algorithms used in optimization problems.
-              As an input they usually take reasearch time limit and an initial solution.
-              With various operations
-              like mutations, choosing an neighborhood, crossovers etc., changing
-              initial solution more or less randomly.
-              During research they estimate quality of encountered candidates.
-              The most popular calssifaction is to divide them into single-solution and population-based.
-              In optimization problems we encounter problem as local optimum.
-              There are some tricks used in Metaheuristics that allow us to escape from this places.
-              In matehmatical optimization and computer science
-              they may provide a sufficiently good solution to an optimization problem.
-              The problem with them is that they do not guarantee globally optimal
-              solution for some classes of problems. Some of my implementations can be found <a href='https://github.com/sqoshi/metaheuristic-alghoritms'>here</a>.
-              <a href='https://en.wikipedia.org/wiki/Machine_learning'>
-                <h5 class='interests-title'>Machine Learning</h5>
-              </a>
-              If machine learning is an aspect of artificial intelligence, then
-              <a href='https://en.wikipedia.org/wiki/Deep_learning'>deep learning</a> is an aspect of machine learning — furthermore, it
-              is a form of machine learning that applies <a href='https://en.wikipedia.org/wiki/Neural_networks'>neural networks</a>.
-              I am have worked few times with neural networks and linear regression. Neural networks can be used to solve a lot of problems.
-              For example we can solve a lot of exploration problems by learning neural network
-              to predict future data basing on the data you have.
-              Neural networks can also solve a lot of recognition problems like object
-              detection on image, or camera. Can be used for clustering problem in directed and undirected graphs.
-              We could say the possibilities are endless. Some interesting uses can be found on my
-              <a href='https://github.com/sqoshi'>github</a>.
-              <h5 class='interests-title'>Other</h5>
-              As long as I devote myself to work and study, I do not really have a lot of free time.
-              One of my dreams is to conquer one of the world's greatest peaks, I also like to play computer games :)!
+          <div class='interests-element'>
+            <a href='https://en.wikipedia.org/wiki/Metaheurisstic'>
+              <h5 class='interests-title'>Metaheuristics</h5>
+            </a>
+            Metaheuristics are algorithms used in optimization problems.
+            As an input they usually take reasearch time limit and an initial solution.
+            With various operations
+            like mutations, choosing an neighborhood, crossovers etc., changing
+            initial solution more or less randomly.
+            During research they estimate quality of encountered candidates.
+            The most popular calssifaction is to divide them into single-solution and population-based.
+            In optimization problems we encounter problem as local optimum.
+            There are some tricks used in Metaheuristics that allow us to escape from this places.
+            In matehmatical optimization and computer science
+            they may provide a sufficiently good solution to an optimization problem.
+            The problem with them is that they do not guarantee globally optimal
+            solution for some classes of problems. Some of my implementations can be found <a href='https://github.com/sqoshi/metaheuristic-alghoritms'>here</a>.
+          </div>
+          <div class='interests-element'>
+            <a href='https://en.wikipedia.org/wiki/Machine_learning'>
+              <h5 class='interests-title'>Machine Learning</h5>
+            </a>
+            If machine learning is an aspect of artificial intelligence, then
+            <a href='https://en.wikipedia.org/wiki/Deep_learning'>deep learning</a> is an aspect of machine learning — furthermore, it
+            is a form of machine learning that applies <a href='https://en.wikipedia.org/wiki/Neural_networks'>neural networks</a>.
+            I have worked few times with neural networks and linear regression. Neural networks can be used to solve a lot of problems.
+            For example we can solve a lot of exploration problems by learning neural network
+            to predict future data basing on the data you have.
+            Neural networks can also solve a lot of recognition problems like object
+            detection on image, or camera. Can be used for clustering problem in directed and undirected graphs.
+            We could say the possibilities are endless. Some interesting uses can be found on my
+            <a href='https://github.com/sqoshi'>github</a>.
+          </div>
+          <div class='interests-element'>
+            <h5 class='interests-title'>Other</h5>
+            As long as I devote myself to work and study, I do not really have a lot of free time.
+            One of my dreams is to conquer one of the world's greatest peaks, I also like to play computer games :)!
+          </div>
         </div>
       </section>
     </section>
   </section>
-  <section id='skills-container move-up'>
+  <section id='skills-container' class='move-up'>
     <section class='column move-up'>
       <div id='skills-overlay'>
         <section id='skills' class="content">
+          <h4 class='section-header'>Skills</h4>
           <div class='skills-element'>
             <h4 class='skills-header'>Programming Languages</h4>
             <ul class='skills-list'>
@@ -135,8 +142,7 @@
       </div>
     </section>
   </section>
-  <h1 class='skills-header'>Projects</h1>
-
+  <h4 class='skills-header'>Projects</h4>
   <section id='projects'>
     <div id='projects-container'>
       <img id="project-img" src="resources/img/projects/shopping_bot.png" />
@@ -151,7 +157,7 @@
   </section>
   <section id='contact'>
     <section class="column">
-      <h1 class='skills-header'>Contact references</h1>
+      <h4 class='skills-header'>Contact references</h4>
       <div id='contact-references-container'>
         <a href="mailto:piotrpopis@icloud.com" class='contact-reference'>
           <img src='resources/img/logos/mail.png' class='contact-reference-img'></img>

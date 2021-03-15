@@ -1,3 +1,4 @@
+/* mobile */
 body {
   background-color: white;
 }
@@ -131,4 +132,14 @@ body {
 .readme pre, code {
   overflow: auto;
   max-width: 80%;
+}
+
+
+@media screen and (min-width: 1150px) {
+  .project-object{
+    margin-bottom: 1vw;
+  }
+  .project-info{
+    padding-top: 4vw;
+  }
 }
