@@ -119,6 +119,7 @@ body {
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 2rem;
+  -webkit-overflow-scrolling: touch
   /* error in readme safari
   overflow: auto;*/
 }
