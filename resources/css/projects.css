@@ -119,14 +119,14 @@ body {
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 2rem;
-  /* error in readme safari*/
-  overflow: auto;
+  /* error in readme safari
+  overflow: auto;*/
 }
 
 .readme {
   min-height: 50vw;
-  /* error in readme safari*/
-  -webkit-overflow-scrolling: touch;
+  /* error in readme safari
+  -webkit-overflow-scrolling: touch;*/
 }
 
 .readme pre, code {
