@@ -2,26 +2,13 @@
 <html>
 
 <head>
-  <title>readme</title>
+  <title>README</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet"
-    href="file:////home/piotr/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.5.17/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
-
-
-
-
-
-
-
-
-
+    href="file:////home/piotr/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.5.18/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
   <style>
-    /**
- * prism.js Github theme based on GitHub's theme.
- * @author Sam Clarke
- */
     code[class*="language-"],
     pre[class*="language-"] {
       color: #333;
@@ -814,95 +801,158 @@
     html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc {
       display: none
     }
-
-    /* Please visit the URL below for more information: */
-    /*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
   </style>
 </head>
 
 <body for="html-export">
   <div class="mume markdown-preview  ">
-    <h1 class="mume-header" id="portfolio">Portfolio</h1>
+    <h1 class="mume-header" id="mobile-applications">mobile-applications</h1>
 
-    <h2 class="mume-header" id="table-of-contents">Table of contents</h2>
+    <h1 class="mume-header" id="table-of-contents">Table Of Contents</h1>
 
     <ul>
-      <li><a href="https://github.com/sqoshi/sqoshi.github.io/">Portfolio</a>
+      <li><a href="#todo">ToDo</a>
         <ul>
-          <li><a href="#table-of-contents">Table of contents</a></li>
           <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#launch">Launch</a></li>
           <li><a href="#general-info">General Info</a>
             <ul>
-              <li><a href="#desktop-front-page">Desktop front page</a>
-                <ul>
-                  <li><a href="#intro">Intro</a></li>
-                  <li><a href="#interests">Interests</a></li>
-                </ul>
-              </li>
-              <li><a href="#mobile-version">Mobile version</a></li>
+              <li><a href="#sorts">Sorts</a></li>
+              <li><a href="#filter-by-priority">Filter by priority</a></li>
+              <li><a href="#task-structure">Task structure</a></li>
+              <li><a href="#icon-chooser">Icon chooser</a></li>
+              <li><a href="#calendar">Calendar</a></li>
             </ul>
           </li>
-          <li><a href="#code-example">Code Example</a></li>
-          <li><a href="#technologies">Technologies</a></li>
+          <li><a href="#layout-3">Layout</a>
+            <ul>
+              <li><a href="#portrait-2">Portrait</a>
+                <ul>
+                  <li><a href="#tasks-list">Tasks list</a></li>
+                  <li><a href="#task-update">Task update</a></li>
+                  <li><a href="#task-deletion">Task deletion</a></li>
+                  <li><a href="#all-tasks-deletion">All tasks deletion</a></li>
+                </ul>
+              </li>
+              <li><a href="#landscape-2">Landscape</a>
+                <ul>
+                  <li><a href="#tasks-list-1">Tasks list</a></li>
+                  <li><a href="#task-addition">Task addition</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#code-example-3">Code Example</a></li>
         </ul>
       </li>
     </ul>
-    <h2 class="mume-header" id="introduction">Introduction</h2>
+    <hr>
+    <h1 class="mume-header" id="todohttpsgithubcomsqoshimobile-applicationstreemasterlist03todo"><a
+        href="https://github.com/sqoshi/mobile-applications/tree/master/list03/ToDo">ToDo</a></h1>
 
-    <p>Fully responsive website in pure css, html and just a few lines of javascript. That limitation of javascript
-      language is due to university course list requirement. Anyway, it did not affect significantly performance of
-      website. Specification can be found in <code>www-l1.pdf</code> included into this repository.</p>
-    <h2 class="mume-header" id="launch">Launch</h2>
+    <h3 class="mume-header" id="introduction">Introduction</h3>
 
-    <p>Website is available under this link <a href="https://sqoshi.github.io">popsite</a>.</p>
-    <h2 class="mume-header" id="general-info">General Info</h2>
+    <p>ToDo application in kotlin. This app may be usefull for android users who sometimes forgot about their schedule.
+    </p>
+    <h3 class="mume-header" id="general-info">General Info</h3>
 
-    <p>Website had been designed in accordance with rule <code>mobile first</code>.</p>
-    <h3 class="mume-header" id="desktop-front-page">Desktop front page</h3>
+    <p>Application allow to add tasks to table in <code>Room</code> abstract database (database is instantinated using
+      <code>singleton pattern</code>) which is displayed on main fragment of program. During task inserting procedure
+      program adds <code>alarm</code> by alarm manager to our phone, so when task is close to expiration date phone
+      vibrates, ringing and user face clickable popup that leads to <code>ToDo</code> app activity or creates new one.
+    </p>
+    <p>User can perform operations as <code>read</code>,<code>add</code>,<code>delete</code>,<code>update</code>,
+      <code>delete-all</code>, <code>filter</code> and <code>sort</code> by every field in task table so we can say that
+      app handles CRUD requests.
+    </p>
+    <p>Few of them can be found inside menu bar.<br>
+      <img src="https://raw.githubusercontent.com/sqoshi/mobile-applications/master/list03/ToDo/media/menu_bar.png" alt>
+    </p>
+    <p>Application save instances values in outState and remembers thats how configuration of state after rotation.</p>
+    <p>User can set priority and type of the task.</p>
+    <h4 class="mume-header" id="sorts">Sorts</h4>
 
-    <h4 class="mume-header" id="intro">Intro</h4>
+    <p><img src="https://raw.githubusercontent.com/sqoshi/mobile-applications/master/list03/ToDo/media/sorts.png" alt></p>
+    <h4 class="mume-header" id="filter-by-priority">Filter by priority</h4>
 
-    <p><img
-        src="https://raw.githubusercontent.com/sqoshi/sqoshi.github.io/master/resources/img/readme_portfolio/portfolio.png"
-        alt></p>
-    <h4 class="mume-header" id="interests">Interests</h4>
+    <p>Priority is an <code>Enum(HIGH,MEDIUM,LOW)</code> each value correspond to the appropriate color of task.</p>
+    <p><img src="https://raw.githubusercontent.com/sqoshi/mobile-applications/master/list03/ToDo/media/filters.png" alt></p>
+    <h4 class="mume-header" id="task-structure">Task structure</h4>
 
-    <p><img
-        src="https://raw.githubusercontent.com/sqoshi/sqoshi.github.io/master/resources/img/readme_portfolio/interests.png"
-        alt></p>
-    <h3 class="mume-header" id="mobile-version">Mobile version</h3>
-
-    <p><img
-        src="https://raw.githubusercontent.com/sqoshi/sqoshi.github.io/master/resources/img/readme_portfolio/portfolio_mobile.png"
-        alt></p>
-    <h2 class="mume-header" id="code-example">Code Example</h2>
-
-    <pre data-role="codeBlock" data-info="html" class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>project-tile<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>project-object<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>project-container<span class="token punctuation">&quot;</span></span> <span class="token special-attr"><span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token value javascript language-javascript"><span class="token function">toggle_project_info</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span></span><span class="token punctuation">&quot;</span></span></span><span class="token punctuation">&gt;</span></span>
-       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>gpa<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>project-object-img<span class="token punctuation">&quot;</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>resources/img/projects/gpa.png<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
-       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>project-object-img-overlay<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>project-object-name<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-        GPA calculator
-       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>project-info<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-       <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>embed</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>readme<span class="token punctuation">&quot;</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>resources/readmes/gpa.html<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
-      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <p>Task structure:</p>
+    <pre data-role="codeBlock" data-info="kotlin" class="language-kotlin"><span class="token keyword">data</span> <span class="token keyword">class</span> <span class="token function">Task</span><span class="token punctuation">(</span>
+    <span class="token annotation builtin">@PrimaryKey</span><span class="token punctuation">(</span>autoGenerate <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">)</span>
+    <span class="token keyword">val</span> id<span class="token operator">:</span> Int<span class="token punctuation">,</span>
+    <span class="token keyword">val</span> name<span class="token operator">:</span> String<span class="token punctuation">,</span>
+    <span class="token keyword">val</span> date<span class="token operator">:</span> Date<span class="token punctuation">,</span>
+    <span class="token keyword">val</span> description<span class="token operator">:</span> String<span class="token punctuation">,</span>
+    <span class="token keyword">val</span> type<span class="token operator">:</span> String<span class="token punctuation">,</span>
+    <span class="token keyword">val</span> priority<span class="token operator">:</span> String<span class="token punctuation">,</span>
+<span class="token punctuation">)</span> <span class="token operator">:</span> Parcelable
 </pre>
-    <h2 class="mume-header" id="technologies">Technologies</h2>
+    <h4 class="mume-header" id="icon-chooser">Icon chooser</h4>
 
-    <ul>
-      <li>CSS</li>
-      <li>HTML</li>
-      <li>Javascript</li>
-    </ul>
+    <p>Type is responsible for an icon app allows for types as on the screen below:<br>
+      <img src="https://raw.githubusercontent.com/sqoshi/mobile-applications/master/list03/ToDo/media/icon_chooser.png" alt>
+    </p>
+    <h4 class="mume-header" id="calendar">Calendar</h4>
+
+    <p>All tasks can also be viewed via Calendar. Date click lists all tasks assigned to this day as LiveData.<br>
+      <img src="https://raw.githubusercontent.com/sqoshi/mobile-applications/master/list03/ToDo/media/calendar.png" alt>
+    </p>
+    <h3 class="mume-header" id="layout-3">Layout</h3>
+
+    <p>Application handles both landscape and portrait layouts.</p>
+    <h4 class="mume-header" id="portrait-2">Portrait</h4>
+
+    <h5 class="mume-header" id="tasks-list">Tasks list</h5>
+
+    <p><img src="https://raw.githubusercontent.com/sqoshi/mobile-applications/master/list03/ToDo/media/list.png" alt></p>
+    <h5 class="mume-header" id="task-update">Task update</h5>
+
+    <p><img src="https://raw.githubusercontent.com/sqoshi/mobile-applications/master/list03/ToDo/media/update.png" alt></p>
+    <h5 class="mume-header" id="task-deletion">Task deletion</h5>
+
+    <p><img src="https://raw.githubusercontent.com/sqoshi/mobile-applications/master/list03/ToDo/media/rm2.png" alt></p>
+    <h5 class="mume-header" id="all-tasks-deletion">All tasks deletion</h5>
+
+    <p><img src="https://raw.githubusercontent.com/sqoshi/mobile-applications/master/list03/ToDo/media/rm1.png" alt></p>
+    <h4 class="mume-header" id="landscape-2">Landscape</h4>
+
+    <h5 class="mume-header" id="tasks-list-1">Tasks list</h5>
+
+    <p><img src="https://raw.githubusercontent.com/sqoshi/mobile-applications/master/list03/ToDo/media/list_land.png" alt></p>
+    <h5 class="mume-header" id="task-addition">Task addition</h5>
+
+    <p><img src="https://raw.githubusercontent.com/sqoshi/mobile-applications/master/list03/ToDo/media/add_land.png" alt></p>
+    <h3 class="mume-header" id="code-example-3">Code Example</h3>
+
+    <pre data-role="codeBlock" data-info="kotlin" class="language-kotlin"><span class="token keyword">private</span> <span class="token keyword">fun</span> <span class="token function">setUpNotification</span><span class="token punctuation">(</span>hour<span class="token operator">:</span> Int<span class="token punctuation">,</span> minute<span class="token operator">:</span> Int<span class="token punctuation">,</span> day<span class="token operator">:</span> Int<span class="token punctuation">,</span> month<span class="token operator">:</span> Int<span class="token punctuation">,</span> year<span class="token operator">:</span> Int<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">val</span> calendar<span class="token operator">:</span> Calendar <span class="token operator">=</span> Calendar<span class="token punctuation">.</span><span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        calendar<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>Calendar<span class="token punctuation">.</span>HOUR_OF_DAY<span class="token punctuation">,</span> hour<span class="token punctuation">)</span>
+        calendar<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>Calendar<span class="token punctuation">.</span>MINUTE<span class="token punctuation">,</span> minute<span class="token punctuation">)</span>
+        calendar<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>Calendar<span class="token punctuation">.</span>SECOND<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+        calendar<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>Calendar<span class="token punctuation">.</span>YEAR<span class="token punctuation">,</span> year<span class="token punctuation">)</span>
+        calendar<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>Calendar<span class="token punctuation">.</span>MONTH<span class="token punctuation">,</span> month<span class="token punctuation">)</span>
+        calendar<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>Calendar<span class="token punctuation">.</span>DAY_OF_MONTH<span class="token punctuation">,</span> day<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>calendar<span class="token punctuation">.</span>time <span class="token operator">&lt;</span> <span class="token function">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> calendar<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>Calendar<span class="token punctuation">.</span>DAY_OF_MONTH<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+        <span class="token keyword">val</span> intent <span class="token operator">=</span> <span class="token function">Intent</span><span class="token punctuation">(</span>activity<span class="token operator">?</span><span class="token punctuation">.</span>applicationContext<span class="token punctuation">,</span> NotificationReceiver<span class="token operator">::</span><span class="token keyword">class</span><span class="token punctuation">.</span>java<span class="token punctuation">)</span>
+        <span class="token keyword">val</span> pendingIntent <span class="token operator">=</span> PendingIntent<span class="token punctuation">.</span><span class="token function">getBroadcast</span><span class="token punctuation">(</span>
+            activity<span class="token operator">?</span><span class="token punctuation">.</span>applicationContext<span class="token punctuation">,</span>
+            <span class="token punctuation">(</span><span class="token number">0</span><span class="token operator">..</span><span class="token number">2147483647</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            intent<span class="token punctuation">,</span>
+            PendingIntent<span class="token punctuation">.</span>FLAG_UPDATE_CURRENT
+        <span class="token punctuation">)</span>
+        <span class="token keyword">val</span> alarmManager <span class="token operator">=</span>
+            activity<span class="token operator">?</span><span class="token punctuation">.</span><span class="token function">getSystemService</span><span class="token punctuation">(</span>AppCompatActivity<span class="token punctuation">.</span>ALARM_SERVICE<span class="token punctuation">)</span> <span class="token keyword">as</span> AlarmManager
+        alarmManager<span class="token punctuation">.</span><span class="token function">setRepeating</span><span class="token punctuation">(</span>
+            AlarmManager<span class="token punctuation">.</span>RTC_WAKEUP<span class="token punctuation">,</span>
+            calendar<span class="token punctuation">.</span>timeInMillis<span class="token punctuation">,</span>
+            AlarmManager<span class="token punctuation">.</span>INTERVAL_DAY<span class="token punctuation">,</span>
+            pendingIntent
+        <span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+</pre>
+    <hr>
 
   </div>
 
