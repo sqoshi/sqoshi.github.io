@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php
+session_start();
+require_once "config.php";
+?>
 <html lang='en'>
 
 <head>
@@ -6,25 +9,13 @@
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
   <link rel="stylesheet" href="resources/css/index.css">
   <script src="resources/js/index.js"></script>
-  <!-- <noscript><meta http-equiv="refresh" content="0; url=index_no_javascript.html" /></noscript> -->
-  <noscript><link rel="stylesheet" href="resources/css/menu_no_js.css"></noscript>
   <title>popisite</title>
 </head>
 
 <body onload="startTimer()">
-  <nav id="menu">
-    <div id='menu-header'>
-      <a id='menu-logo-a' href="index.html"><img id='menu-logo-img' src="resources/img/logo_wolf_white.png" alt='menu-logo' /></a>
-      <svg id='menu-icon' onclick='toggle_menu()' viewBox="0 0 100 80">
-        <rect class='hamburger-rect' width='100px' height='20px'></rect>
-        <rect class='hamburger-rect' y="30" width='100px' height='20px'></rect>
-        <rect class='hamburger-rect' y="60" width='100px' height='20px'></rect>
-      </svg>
-    </div>
-    <nav id='menu-links' class='menu-links'>
-      <a class='link' href="projects.html">Projects</a>
-    </nav>
-  </nav>
+  <?php
+  include('menu.php');
+  ?>
   <div id='hero'>
     <div class='column' id='intro-container'>
       <div id='intro'>
@@ -176,5 +167,9 @@
     </section>
   </div>
 </body>
+
+<?php
+include('views_counter.php');
+?>
 
 </html>

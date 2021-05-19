@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,38 +9,20 @@
   <link href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&amp;subset=Latin" rel="stylesheet" type="text/css" />
   <link href="resources/css/index.css" rel="stylesheet" />
   <link href="resources/css/projects.css" rel="stylesheet" />
-  <script src="resources/js/projects.js">
-  </script>
-  <noscript>
-    <link href="resources/css/menu_no_js.css" rel="stylesheet" />
-  </noscript>
+  <script src="resources/js/projects.js"></script>
   <title>
     popisite
   </title>
 </head>
 
 <body>
+  <?php
+  include('menu.php');
+  ?>
   <div class="down-right-triangle">
   </div>
   <div class="up-left-triangle">
   </div>
-  <nav id="menu">
-    <div id="menu-header">
-      <a href="index.html" id="menu-logo-a">
-        <img alt="logo" id="menu-logo-img" src="resources/img/logo_wolf_white.png" />
-      </a>
-      <svg id="menu-icon" onclick="toggle_menu()" viewbox="0 0 100 80">
-        <rect class="hamburger-rect" height="20px" width="100px">
-        </rect>
-        <rect class="hamburger-rect" height="20px" width="100px" y="30">
-        </rect>
-        <rect class="hamburger-rect" height="20px" width="100px" y="60">
-        </rect>
-      </svg>
-    </div>
-    <nav class="menu-links" id="menu-links">
-      <a class="link" href="index.html">Home</a>
-    </nav>
   </nav>
   <section id="projects-content">
     <div class="column">
